@@ -692,7 +692,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       </mediaobject>
     </figure>
 
-    <para>A [XMLmind] Exchange Language document starts with a
+    <para>A Exchange Language document starts with a
     VariabilityExchangeModels element, which contains a number of
     VariabilityExchangeModel elements. Each VariabilityExchangeModel
     corresponds to one (or possibly several, but this is implementation
@@ -754,7 +754,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         </listitem>
       </orderedlist>
 
-      <para>Each VariationPoint is [XMLmind] with one or more Variations. The
+      <para>Each VariationPoint is associated with one or more Variations. The
       Variations enumerate the possible variants for their respective
       VariationPoints. When an artifact is bound, then one of these variations
       (OptionalStructuralVariationPoints also allow zero variations here) is
@@ -810,7 +810,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
     <section>
       <title>Binding</title>
 
-      <para>The <emphasis>Variability [XMLmind] Language</emphasis> does not
+      <para>The <emphasis>Variability Exhange Language</emphasis> does not
       make any assumptions on how the binding process for the associated
       artifact works. We do however provide a way to attach Conditions or
       Expressions to Variations:</para>
@@ -866,7 +866,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         </listitem>
 
         <listitem>
-          <para>Getting [XMLmind] on the read or write access (Capability) to
+          <para>Getting information on the read or write access (Capability) to
           VariationPoints and VariabilityExchangeModels as
           configurations.</para>
         </listitem>
@@ -937,7 +937,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       linkend="_fig-exampleVEL"/> is the equivalent to the first source code
       line.</para>
 
-      <para>The [XMLmind] variation point (lines 3-5) is nested within the
+      <para>The second variation point (lines 3-5) is nested within the
       first variation of the first variation point, constituting a variation
       point hierarchy. Within the corresponding exchange format, the variation
       points are not nested but the nesting information is covered by the
@@ -977,7 +977,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:sequence&gt;</para>
 
-      <para>&lt;xs:attribute [XMLmind]="type" type="xs:string"
+      <para>&lt;xs:attribute name="type" type="xs:string"
       use="optional"/&gt;</para>
 
       <para>&lt;xs:attribute name="uri" type="xs:anyURI"
@@ -1001,7 +1001,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/optional-structural-variationpoint&gt;</para>
 
-      <para>[XMLmind] Example for artifact-element-type using URIs</para>
+      <para>XML Example for artifact-element-type using URIs</para>
 
       <para>&lt;optional-structural-variationpoint id="vp2"&gt;</para>
 
@@ -1045,7 +1045,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
           <listitem>
             <para>The attribute URI of an ArtifactElement should conform to
             the definition of Uniform Resource Locators as specified in
-            ???.</para>
+            <xref linkend="_Ref401836486"/>).</para>
           </listitem>
 
           <listitem>
@@ -1141,7 +1141,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:complexType&gt;</para>
 
-      <para id="_BindingTimeEnum">[XMLmind] Schema for bindingtime-type</para>
+      <para id="_BindingTimeEnum">XML Schema for bindingtime-type</para>
 
       <para>&lt;variability-exchange-model type="<emphasis
       role="bold">variationpoint-description</emphasis>" id="model"&gt;</para>
@@ -1291,7 +1291,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
           </listitem>
 
           <listitem>
-            <para>A [XMLmind] point is set to
+            <para>A variation point point is set to
             &OpenCurlyDoubleQuote;inactive&CloseCurlyDoubleQuote;. For
             example, an if statement may prevent certain code sections from
             being executed. This is typically used if the binding comes too
@@ -1602,7 +1602,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:enumeration value="blueprint-derivation-time"/&gt;</para>
 
-      <para>&lt;xs:enumeration [XMLmind]="model-construction-time"/&gt;</para>
+      <para>&lt;xs:enumeration value="model-construction-time"/&gt;</para>
 
       <para>&lt;xs:enumeration value="model-simulation-time"/&gt;</para>
 
@@ -1622,7 +1622,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:enumeration value="post-build-selectable-time"/&gt;</para>
 
-      <para>&lt;xs:enumeration [XMLmind]="run-time"/&gt;</para>
+      <para>&lt;xs:enumeration value="run-time"/&gt;</para>
 
       <para>&lt;/xs:restriction&gt;</para>
 
@@ -1802,7 +1802,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         <title>Description</title>
 
         <para>A CalculatedParameterVariatonPoint is a ParameterVariationPoint
-        [XMLmind] defines a value for a variation point in an artifact. Unlike
+        that defines a value for a variation point in an artifact. Unlike
         a XorParameterVariationPoint, which picks one value from a number of
         choices, a CalculatedParameterVariatonPoint uses an expression to
         define the value.</para>
@@ -1959,7 +1959,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:sequence&gt;</para>
 
-      <para>&lt;xs:element [XMLmind]="import-variability-exchange-model"
+      <para>&lt;xs:element name="import-variability-exchange-model"
       type="xs:boolean" /&gt;</para>
 
       <para>&lt;xs:element name="export-variability-exchange-model"
@@ -1983,7 +1983,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</para>
 
-      <para>[XMLmind]:noNamespaceSchemaLocation="../VariabilityExchangeLanguage.xsd"&gt;</para>
+      <para>xsi:noNamespaceSchemaLocation="../VariabilityExchangeLanguage.xsd"&gt;</para>
 
       <para>&lt;version&gt;1&lt;/version&gt;</para>
 
@@ -2023,7 +2023,15 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <para>The attribute getVariationPoints determines whether the
         operation importVariabilityExchangeModels of the class VariabilityAPI
-        is supported: ???</para>
+        is supported: </para>
+		<itemizedlist>
+			<listitem>
+				<para>If getVariationPoints is <emphasis>true</emphasis>, then the VariabilityAPI supports the operation importVariabilityExchangeModels.</para>
+			</listitem>
+			<listitem>
+				<para>If getVariationPoints is <emphasis>false</emphasis>, then the VariabilityAPI does not support the operation importVariabilityExchangeModels.</para>
+			</listitem>
+		</itemizedlist>
       </section>
 
       <section>
@@ -2031,14 +2039,30 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <para>The attribute setVariationPoints determines whether the
         operation exportVariabilityExchangeModels of the class VariabilityAPI
-        is supported: ???</para>
+        is supported: </para>
+		<itemizedlist>
+			<listitem>
+				<para>If setVariationPoints  is <emphasis>true</emphasis>, then the VariabilityAPI supports the operation exportVariabilityExchangeModels.</para>
+			</listitem>
+			<listitem>
+				<para>If setVariationPoints  is <emphasis>false</emphasis>, then the VariabilityAPI does not support the operation exportVariabilityExchangeModels.</para>
+			</listitem>
+		</itemizedlist>
       </section>
 
       <section>
         <title>Attribute getConfiguration</title>
 
         <para>The attribute getConfiguration determines whether the operation
-        getConfiguration of the class VariabilityAPI is supported: ???</para>
+        getConfiguration of the class VariabilityAPI is supported:</para>
+		<itemizedlist>
+			<listitem>
+				<para>If getConfiguration is <emphasis>true</emphasis>, then the VariabilityAPI supports the operation getConfiguration.</para>
+			</listitem>
+			<listitem>
+				<para>If getConfiguration is <emphasis>false</emphasis>, then the VariabilityAPI does not support the operation getConfiguration.</para>
+			</listitem>
+		</itemizedlist>
       </section>
 
       <section>
@@ -2048,7 +2072,15 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         role="underline">setConfiguration</emphasis> determines whether the
         operation <emphasis role="underline">setConfiguration </emphasis>of
         the class <emphasis role="underline">VariabilityAPI</emphasis> is
-        supported: ???</para>
+        supported: </para>
+		<itemizedlist>
+			<listitem>
+					<para>If setConfiguration is <emphasis>true</emphasis>, then the VariabilityAPI supports the operation setConfiguration.</para>
+			</listitem>
+			<listitem>
+					<para>If setConfiguration is <emphasis>false</emphasis>, then the VariabilityAPI does not support the operation setConfiguration.</para>
+			</listitem>
+		</itemizedlist>
       </section>
     </section>
 
@@ -2059,7 +2091,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <title>Section Prolog</title>
 
       <figure>
-        <title>[XMLmind] Diagram for class Expression</title>
+        <title>UML Diagram for class Expression</title>
 
         <mediaobject>
           <imageobject>
@@ -2169,7 +2201,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         determined by the attribute type. In the XML representation, the
         actual expression is contained in the inner text of the expression of
         condition element<footnote id="__FN2__">
-            <para>[XMLmind] simplicity and consistency, XML elements of type
+            <para>For simplicity and consistency, XML elements of type
             expression-type are always named <phrase>expression</phrase> or
             <phrase>condition</phrase>.</para>
           </footnote>.</para>
@@ -2184,7 +2216,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <section>
         <title>Attribute type</title>
 
-        <para>The [XMLmind] type defines the kind of expression in the inner
+        <para>The attribute type defines the kind of expression in the inner
         text of the expression of condition element. There are several kinds
         of expressions:</para>
 
@@ -2682,7 +2714,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         </section> 
 
         <section id="_Ref400711346">
-          <title>Syntax [XMLmind] single-feature&ndash;condition</title>
+          <title>Syntax for single-feature&ndash;condition</title>
 
           <itemizedlist>
             <listitem>
@@ -2800,7 +2832,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:sequence&gt;</para>
 
-      <para>&lt;xs:element [XMLmind]="special-data"</para>
+      <para>&lt;xs:element name="special-data"</para>
 
       <para>type="special-data-type"</para>
 
@@ -2875,7 +2907,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         element of its own, but adds two new attributes id and name to any
         type that is an extension of identifiable-type.</para>
 
-        <para>&lt;xs:complexType [XMLmind]="variationpoint-type"
+        <para>&lt;xs:complexType name="variationpoint-type"
         abstract="true"&gt;</para>
 
         <para>&lt;xs:complexContent&gt;</para>
@@ -2898,7 +2930,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <para>type="artifact-element-type"</para>
 
-        <para>[XMLmind]="0"</para>
+        <para>minOccurs="0"</para>
 
         <para>maxOccurs="unbounded"/&gt;</para>
 
@@ -3156,7 +3188,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:extension base="xs:string"&gt;</para>
 
-      <para>&lt;xs:attribute [XMLmind]="type" type="xs:string"
+      <para>&lt;xs:attribute name="type" type="xs:string"
       use="optional"/&gt;</para>
 
       <para>&lt;/xs:extension&gt;</para>
@@ -3205,7 +3237,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       </section>
 
       <section>
-        <title>Description of [XMLmind] KeyValuePair</title>
+        <title>Description of Class KeyValuePair</title>
 
         <para>Application specific data for VariationPoint and Variation
         objects is implemented by the class SpecialData, which aggregates a
@@ -3250,7 +3282,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       </section>
 
       <section>
-        <title>Attribute type of [XMLmind] Value</title>
+        <title>Attribute type of Class Value</title>
 
         <para>The attribute type of class Value can be used to indicate the
         data type of the value of a Value object. The contents of type are not
@@ -3306,7 +3338,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:complexContent&gt;</para>
 
-      <para>&lt;xs:extension [XMLmind]="variationpoint-type"&gt;</para>
+      <para>&lt;xs:extension base="variationpoint-type"&gt;</para>
 
       <para>&lt;xs:sequence&gt;</para>
 
@@ -3326,7 +3358,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:complexType&gt;</para>
 
-      <para>[XMLmind] Schema for
+      <para>XML Schema for
       optional-structural-variaton-point-type</para>
 
       <para>&lt;optional-structural-variationpoint id="vp1"&gt;</para>
@@ -3376,7 +3408,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         <title>Description</title>
 
         <para>An OptionalStructuralVariationPoint is a VariationPoint
-        [XMLmind] contains one or more <phrase>OptionalVariation</phrase>
+        that contains one or more <phrase>OptionalVariation</phrase>
         objects.</para>
       </section>
 
@@ -3417,7 +3449,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:sequence&gt;</para>
 
-      <para>&lt;xs:element [XMLmind]="condition"</para>
+      <para>&lt;xs:element name="condition"</para>
 
       <para>type="expression-type"</para>
 
@@ -3436,7 +3468,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <para><emphasis role="bold">&lt;variation id="v1"&gt;</emphasis></para>
 
       <para>&lt;condition
-      [XMLmind]="or-feature-expression"&gt;Feature1,Feature2&lt;/condition&gt;</para>
+      type="or-feature-expression"&gt;Feature1,Feature2&lt;/condition&gt;</para>
 
       <para><emphasis role="bold">&lt;/variation&gt;</emphasis></para>
 
@@ -3579,7 +3611,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <itemizedlist>
           <listitem>
-            <para>A [XMLmind] or a C-preprocessor symbol (#define)</para>
+            <para>A value or a C-preprocessor symbol (#define)</para>
           </listitem>
 
           <listitem>
@@ -3632,7 +3664,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <title>Section Prolog</title>
 
       <figure>
-        <title>[XMLmind] Diagram for class SpecialData</title>
+        <title>UML Diagram for class SpecialData</title>
 
         <mediaobject>
           <imageobject>
@@ -3661,7 +3693,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:complexType&gt;</para>
 
-      <para>[XMLmind] Schema for special-data-type</para>
+      <para>XML Schema for special-data-type</para>
 
       <para>&lt;optional-structural-variationpoint id="vp1" name="optional
       variationpoint"&gt;</para>
@@ -3852,7 +3884,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>maxOccurs="1"/&gt;</para>
 
-      <para>&lt;xs:element [XMLmind]="value" type="xs:string"/&gt;</para>
+      <para>&lt;xs:element name="value" type="xs:string"/&gt;</para>
 
       <para>&lt;/xs:sequence&gt;</para>
 
@@ -3901,7 +3933,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xor-parameter-variationpoint&gt;</para>
 
-      <para>[XMLmind] Example for value-variation-type</para>
+      <para>XML Example for value-variation-type</para>
 
       </section>
 
@@ -3918,7 +3950,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         more ValueVariation objects. When a
         <phrase>XorParameterVariationPoint</phrase> gets bound, the attribute
         condition of each ValueVariation is evaluated. The condition may
-        evaluate to ??? for only one ValueVariation, and the attribute value
+        evaluate to <emphasis>true</emphasis> for only one ValueVariation, and the attribute value
         of this ValueVariation is then used to provide a value for its
         correspondingVariableArtifactElement.</para>
 		
@@ -4347,7 +4379,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
           </listitem>
 
           <listitem>
-            <para>See [XMLmind] attribute version of the class
+            <para>See the attribute version of the class
             VariabilityExchangeModels (section <xref
             linkend="_Ref396985690"/>) for further constraints on this
             attribute.</para>
@@ -4640,7 +4672,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:sequence&gt;</para>
 
-      <para>&lt;xs:attribute [XMLmind]="type" type="variability-api-enum"
+      <para>&lt;xs:attribute name="type" type="variability-api-enum"
       use="required"/&gt;</para>
 
       <para>&lt;xs:attribute name="uri" type="xs:anyURI"
@@ -4706,7 +4738,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <para>&lt;variability-exchange-model type="variationpoint-description"
       id="model4"</para>
 
-      <para>[XMLmind]="file:///C:/SPES/file4.c"&gt;</para>
+      <para>url="file:///C:/SPES/file4.c"&gt;</para>
 
       <para>&mldr;</para>
 
@@ -4795,7 +4827,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       </figure>
 
       <para>&lt;xs:complexType
-      [XMLmind]="variability-exchange-models-type"&gt;</para>
+      name="variability-exchange-models-type"&gt;</para>
 
       <para>&lt;xs:sequence&gt;</para>
 
@@ -4817,7 +4849,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:complexType&gt;</para>
 
-      <para>[XMLmind] Schema for variability-exchange-models-type</para>
+      <para>XML Schema for variability-exchange-models-type</para>
 
       <para>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</para>
 
@@ -4949,7 +4981,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
           </listitem>
 
           <listitem>
-            <para>The [XMLmind] version of VariabilityExchangeModels is
+            <para>The attribute version of VariabilityExchangeModels is
             read-only.</para>
           </listitem>
         </itemizedlist>
@@ -4992,7 +5024,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <para>&lt;xs:enumeration value="variationpoint-description"/&gt;</para>
 
       <para>&lt;xs:enumeration
-      [XMLmind]="variationpoint-configuration"/&gt;</para>
+      value="variationpoint-configuration"/&gt;</para>
 
       <para>&lt;/xs:restriction&gt;</para>
 
@@ -5071,7 +5103,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <title>Section Prolog</title> 
 
       <figure>
-        <title>[XMLmind] Diagram for class Variation</title>
+        <title>UML Diagram for class Variation</title>
 
         <mediaobject>
           <imageobject>
@@ -5100,7 +5132,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>type="variation-dependency-type"</para>
 
-      <para>[XMLmind]="0" maxOccurs="unbounded"/&gt;</para>
+      <para>minOccurs="0" maxOccurs="unbounded"/&gt;</para>
 
       <para>&lt;xs:element
       name="corresponding-variable-artifact-element"</para>
@@ -5299,7 +5331,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <section id="_Toc367432891">
         <title>Attribute correspondingVariableArtifactElement</title>
 
-        <para>The [XMLmind] correspondingVariableArtifactElement of a
+        <para>The attribute correspondingVariableArtifactElement of a
         Variation <inlineequation>
                 <mml:math display="inline"
                           xmlns:mml="http://www.w3.org/1998/Math/MathML">
@@ -5496,7 +5528,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/xs:group&gt;</para>
 
-      <para>[XMLmind] Schema for variationpoint-type</para>
+      <para>XML Schema for variationpoint-type</para>
 
       </section>
 
@@ -5942,9 +5974,9 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
                 </mml:math>
               </inlineequation> is a VariationPoint in a <emphasis>Variability Exchange
             Language</emphasis> document<footnote id="__FN6__">
-                <para><phrase>Strictly speaking, </phrase>???<phrase> would be
+                <para><phrase>Strictly speaking, <emphasis>V</emphasis> would be
                 a set of nodes and there is bijective mapping between
-                </phrase>???<phrase> and the set of elements of type
+                <emphasis>V</emphasis> and the set of elements of type
                 </phrase>variationpoint-type in the DOM of the Variability
                 Exchange Language document. We use a simplified language for
                 the sake of clarity here.</para>
@@ -6057,12 +6089,102 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
               </inlineequation></para></listitem>
 			<listitem>
             <para><emphasis>E</emphasis> must not contain cycles, that is, there cannot be a
-            sequence. Formally, the following condition shall hold ???:
+            sequence. Formally, the following condition shall hold:
+			<inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:vector><mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>
+						<mml:ci><mml:msub>
+							<mml:mi>i</mml:mi>
+							<mml:mi>1</mml:mi>
+						</mml:msub></mml:ci>
+                    </mml:msub></mml:ci>
+					<mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>                   
+						<mml:ci><mml:msub>                      
+							<mml:ci>i</mml:ci>
+							<mml:ci>2</mml:ci>
+                    </mml:msub></mml:ci>
+                    </mml:msub></mml:ci></mml:vector>
+					
+					<mml:vector><mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>
+						<mml:ci><mml:msub>
+							<mml:mi>i</mml:mi>
+							<mml:mi>3</mml:mi>
+						</mml:msub></mml:ci>
+                    </mml:msub></mml:ci>
+					<mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>                   
+						<mml:ci><mml:msub>                      
+							<mml:ci>i</mml:ci>
+							<mml:ci>4</mml:ci>
+                    </mml:msub></mml:ci>
+                    </mml:msub></mml:ci></mml:vector>
+					
+					<mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+					
+					<mml:vector><mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>
+						<mml:ci><mml:msub>
+							<mml:mi>i</mml:mi>
+							<mml:mi>k-2</mml:mi>
+						</mml:msub></mml:ci>
+                    </mml:msub></mml:ci>
+					<mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>                   
+						<mml:ci><mml:msub>                      
+							<mml:ci>i</mml:ci>
+							<mml:ci>k-1</mml:ci>
+                    </mml:msub></mml:ci>
+                    </mml:msub></mml:ci></mml:vector>
+					
+					<mml:apply><mml:in/>
+					<mml:vector><mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>
+						<mml:ci><mml:msub>
+							<mml:mi>i</mml:mi>
+							<mml:mi>k-1</mml:mi>
+						</mml:msub></mml:ci>
+                    </mml:msub></mml:ci>
+					<mml:ci><mml:msub>
+                        <mml:ci>v</mml:ci>                   
+						<mml:ci><mml:msub>                      
+							<mml:ci>i</mml:ci>
+							<mml:ci>k</mml:ci>
+                    </mml:msub></mml:ci>
+                    </mml:msub></mml:ci></mml:vector>
+					<mml:ci>E</mml:ci>
+					</mml:apply>
+				</mml:math>
+              </inlineequation> with 
+			  <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+				<mml:apply><mml:eq/>
+					<mml:ci><mml:msub>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                      </mml:mrow>
+                      <mml:mi>1</mml:mi>
+                    </mml:msub></mml:ci>
+					
+					<mml:ci><mml:msub>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mi>k</mml:mi>
+                    </mml:msub></mml:ci>
+				</mml:apply>
+				</mml:math>
+              </inlineequation>
 			</para>
           </listitem>
         </itemizedlist>
 
-        <para>These conditions make sure that ??? is a tree or a set of
+        <para>These conditions make sure that <emphasis>G</emphasis> is a tree or a set of
         trees.</para>
       </section>
 
@@ -6115,7 +6237,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:complexContent&gt;</para>
 
-      <para>&lt;xs:extension [XMLmind]="identifiable-type"&gt;</para>
+      <para>&lt;xs:extension base="identifiable-type"&gt;</para>
 
       <para>&lt;xs:sequence&gt;</para>
 
@@ -6136,7 +6258,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>type="expression-type"</para>
 
-      <para>[XMLmind]="0" maxOccurs="1"/&gt;</para>
+      <para>minOccurs="0" maxOccurs="1"/&gt;</para>
 
       <para>&lt;/xs:sequence&gt;</para>
 
@@ -6182,7 +6304,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <para><emphasis role="bold"> &lt;/depencency&gt;</emphasis></para>
 
       <para>&lt;condition
-      [XMLmind]="single-feature-condition"&gt;Feature1&lt;/condition&gt;</para>
+      type="single-feature-condition"&gt;Feature1&lt;/condition&gt;</para>
 
       <para>&lt;/variation&gt;</para>
 
@@ -6204,7 +6326,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;/variability-exchange-model&gt;</para>
 
-      <para>[XMLmind] example for variation-dependency-type</para>
+      <para>XML example for variation-dependency-type</para>
 
       </section>
 
@@ -6243,7 +6365,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <section>
         <title>Attribute variation</title>
 
-        <para>The [XMLmind] variation of a VariationDependency defines the
+        <para>The attribute variation of a VariationDependency defines the
         target of a dependency.</para>
       </section>
 
@@ -6260,8 +6382,94 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <itemizedlist>
           <listitem>
-            <para>Let ??? be the Variation to which the attribute variation of
-            ??? is defined as follows:</para>
+            <para>Let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be a <emphasis role="underline">Variation</emphasis> which contains a <emphasis role="underline">VariationDependency</emphasis> <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>, and let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>1</mml:mn>
+                    </mml:msub>
+
+                    <mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>k</mml:mn>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the <emphasis role="underline">Variation</emphasis> to which the attribute <emphasis role="underline">variation</emphasis> of <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> refers, and let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>t</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the value of the attribute <emphasis role="underline">type</emphasis> of <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>. Furthermore, let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the content of the attribute <emphasis role="underline">condition</emphasis> of <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation></para>
+			  
+			  <para>Then, the condition of the <emphasis role="underline">VariationDependency</emphasis> <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>, <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci>d</mml:ci></mml:apply>
+                </mml:math>
+              </inlineequation>, is defined as follows:
+			  </para>
 
             <itemizedlist>
               <listitem>
@@ -6275,68 +6483,193 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
                   </inlineequation> is required, then
 				<inlineequation>
                 <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                  <mml:mrow>
-                    <mml:apply>
-                      <mml:eq/>
-
-                      <mml:apply>
-                        <mml:ci type="function">condition</mml:ci>
-
-                        <mml:ci>d</mml:ci>
-                      </mml:apply>
-
-                      <mml:apply>
-                        <mml:implies/>
-
-                        <mml:ci>v</mml:ci>
-
-                        <mml:apply>
-                          <mml:and/>
-
-                          <mml:ci>c</mml:ci>
-
-                          <mml:apply>
-                            <mml:or/>
-
-                            <mml:msub>
-                              <mml:mi>v</mml:mi>
-
-                              <mml:mn>1</mml:mn>
-                            </mml:msub>
-
-                            <mml:mtext>,...,</mml:mtext>
-
-                            <mml:msub>
-                              <mml:mi>v</mml:mi>
-
-                              <mml:mn>1</mml:mn>
-                            </mml:msub>
-                          </mml:apply>
-                        </mml:apply>
-                      </mml:apply>
-                    </mml:apply>
-                  </mml:mrow>
+				<mml:apply><mml:eq/>
+					<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci>d</mml:ci></mml:apply>
+					<mml:apply><mml:implies/>
+						<mml:ci>v</mml:ci>
+						<mml:apply><mml:and/>
+							<mml:ci>c</mml:ci>
+							<mml:apply><mml:or/>
+								<mml:ci>
+									<mml:msub>
+										<mml:ci>v</mml:ci>
+										<mml:ci>1</mml:ci>
+									</mml:msub>
+								</mml:ci>
+								
+								<mml:apply><mml:or/>
+								<mml:ci>,...,</mml:ci>
+								<mml:ci>
+									<mml:msub>
+										<mml:ci>v</mml:ci>
+										<mml:ci>k</mml:ci>
+									</mml:msub>
+								</mml:ci>
+								</mml:apply>
+							</mml:apply>
+						</mml:apply>
+					</mml:apply>
+				</mml:apply>
                 </mml:math>
 				</inlineequation></para>
               </listitem>
 
               <listitem>
-                <para>If the attribute type of ??? is conflicts, then</para>
+                <para>If the attribute type of <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> is <emphasis role="underline">conflicts</emphasis>, then
+				<inlineequation>
+                <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+				<mml:apply><mml:eq/>
+					<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci>d</mml:ci></mml:apply>
+					<mml:apply><mml:implies/>
+						<mml:ci>v</mml:ci>
+						<mml:apply><mml:and/>
+							<mml:ci>c</mml:ci>
+							<mml:apply><mml:and/>
+								
+									<mml:apply><mml:not/>
+									<mml:ci>
+									<mml:msub>
+										<mml:ci>v</mml:ci>
+										<mml:ci>1</mml:ci>
+									</mml:msub>
+									</mml:ci>
+									</mml:apply>
+								
+								
+								<mml:apply><mml:and/>
+								<mml:ci>,...,</mml:ci>
+								
+									<mml:apply><mml:not/>
+									<mml:ci>
+									<mml:msub>
+										<mml:ci>v</mml:ci>
+										<mml:ci>k</mml:ci>
+									</mml:msub>
+									</mml:ci>
+									</mml:apply>
+								
+								</mml:apply>
+							</mml:apply>
+						</mml:apply>
+					</mml:apply>
+				</mml:apply>
+                </mml:math>
+				</inlineequation>
+			  </para>
               </listitem>
             </itemizedlist>
           </listitem>
 
           <listitem>
-            <para>Let ??? be [XMLmind] VariationDependency objects contained
-            by a Variation??? is defined as follows: ???</para>
+            <para>Let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>1</mml:mn>
+                    </mml:msub>
+
+                    <mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>n</mml:mn>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the VariationDependency objects contained
+            by a Variation <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>. Then the condition of <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>, <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci>d</mml:ci></mml:apply>
+                </mml:math>
+              </inlineequation>, is defined as follows: <equation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:apply><mml:eq/>
+						<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci>d</mml:ci></mml:apply>
+						<mml:apply><mml:and/>
+							<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci><mml:msub><mml:ci>d</mml:ci><mml:ci>1</mml:ci></mml:msub></mml:ci></mml:apply>
+							<mml:apply><mml:and/>
+								<mml:ci>,...,</mml:ci>
+								<mml:apply><mml:ci type="function">condition</mml:ci><mml:ci><mml:msub><mml:ci>d</mml:ci><mml:ci>n</mml:ci></mml:msub></mml:ci></mml:apply>
+							</mml:apply>
+						</mml:apply>
+						</mml:apply>
+                </mml:math>
+              </equation></para>
 
              
           </listitem>
 
           <listitem>
-            <para>Let ??? be the conditions of all Variation objects in a
+            <para>Let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>1</mml:mn>
+                    </mml:msub>
+
+                    <mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>n</mml:mn>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the conditions of all Variation objects in a
             <emphasis>Variability Exchange Language</emphasis>. Then the
-            following condition shall hold:</para>
+            following condition shall hold: 
+			<equation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+						  <mml:apply><mml:and/>
+							<mml:ci><mml:msub><mml:ci>c</mml:ci><mml:ci>1</mml:ci></mml:msub></mml:ci>	
+							<mml:apply><mml:and/>
+								<mml:ci>,...,</mml:ci>
+								<mml:ci><mml:msub><mml:ci>c</mml:ci><mml:ci>n</mml:ci></mml:msub></mml:ci>	
+							</mml:apply>
+						</mml:apply>
+				</mml:math>
+			</equation>
+				</para>
           </listitem>
         </itemizedlist>
       </section>
@@ -6380,7 +6713,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         </mediaobject>
       </figure>
 
-      <para>&lt;xs:simpleType [XMLmind]="variation-dependency-enum"&gt;</para>
+      <para>&lt;xs:simpleType name="variation-dependency-enum"&gt;</para>
 
       <para>&lt;xs:restriction base="xs:string"&gt;</para>
 
@@ -6446,7 +6779,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
       <para>&lt;xs:element name="variation"</para>
 
-      <para>[XMLmind]="value-variation-type"</para>
+      <para>type="value-variation-type"</para>
 
       <para>maxOccurs="unbounded" /&gt;</para>
 
@@ -6504,7 +6837,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         evaluated. As described in section <xref linkend="_Toc367432887"/>, it
         is guaranteed that if all ValueVariation objects have a condition
         attribute, then there is exactly one ValueVariation whose condition
-        evaluates to ???. The attribute value of this ValueVariation is then
+        evaluates to <emphasis>true</emphasis>. The attribute value of this ValueVariation is then
         used to set the value of the associated artifact element.</para>
       </section>
 
@@ -6524,7 +6857,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
             that a switch in C or Java first evaluates a Boolean expression
             and then compares the result to a list of constants, while
             XorParameterVariationPoint evaluates a list of Boolean expressions
-            and selects the one which returns???.</para>
+            and selects the one which returns <emphasis>true</emphasis>.</para>
           </listitem>
         </itemizedlist>
       </section>
@@ -6549,7 +6882,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       </figure>
 
       <para>&lt;xs:complexType
-      [XMLmind]="xor-structural-variationpoint-type"&gt;</para>
+      name="xor-structural-variationpoint-type"&gt;</para>
 
       <para>&lt;xs:complexContent&gt;</para>
 
@@ -6612,7 +6945,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         for each XorVariation. As described in section <xref
         linkend="_Ref396825921"/>, it is guaranteed that if all XorVariation
         objects have a condition attribute, then exactly one of those
-        conditions evaluates to???. The artifact element that corresponds to
+        conditions evaluates to <emphasis>true</emphasis>. The artifact element that corresponds to
         the XorVariation whose attribute condition evaluates to true is then
         removed or set inactive.</para>
       </section>
@@ -6646,7 +6979,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         </mediaobject>
       </figure>
 
-      <para>&lt;xs:complexType [XMLmind]="xor-variation-type"&gt;</para>
+      <para>&lt;xs:complexType name="xor-variation-type"&gt;</para>
 
       <para>&lt;xs:complexContent&gt;</para>
 
@@ -6691,7 +7024,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <para><emphasis role="bold"> &lt;/variation&gt;</emphasis></para>
 
       <para><emphasis role="bold"> &lt;variation id="vp1v3"
-      [XMLmind]="Alternative 3"&gt;</emphasis></para>
+      name="Alternative 3"&gt;</emphasis></para>
 
       <para><emphasis role="bold"> &lt;condition
       type="single-feature-condition"&gt;Feature3&lt;/condition&gt;</emphasis></para>
@@ -6712,19 +7045,123 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
 
         <itemizedlist>
           <listitem>
-            <para>Let??? be the values of the selected attributes of the
-            XorVariations which are aggregated by ???. Then the following
+            <para>Let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be a <emphasis role="underline">XorStructuralVariationPoint</emphasis> and let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>s</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>1</mml:mn>
+                    </mml:msub>
+
+                    <mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>s</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>n</mml:mn>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the values of the <emphasis>selected</emphasis> attributes of the
+            XorVariations which are aggregated by <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                        <mml:mi>v</mml:mi>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation>. Then the following
             conditions shall hold:</para>
+			
+			<orderedlist>
+              <listitem><para><inlineequation>
+                <mml:math display="block" 
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:apply>
+                    <mml:exists/>
+					<mml:bvar><mml:ci>i</mml:ci></mml:bvar>
+					<mml:apply><mml:and/>
+					
+					<mml:apply><mml:in/>
+					<mml:ci>i</mml:ci>
+                    <mml:set>
+                      <mml:cn>1</mml:cn>
 
-            <orderedlist>
-              <listitem>
-                <para>???</para>
-              </listitem>
+                      <mml:ci>...</mml:ci>
+
+                      <mml:ci>n</mml:ci>
+                    </mml:set>
+					</mml:apply>
+					
+					<mml:apply><mml:eq/>
+                    <mml:ci><mml:msub>
+                         <mml:mi>s</mml:mi>
+                         <mml:mi>i</mml:mi>
+                    </mml:msub>
+					</mml:ci>
+
+                    <mml:true/>
+					</mml:apply>
+                  </mml:apply>
+				  </mml:apply>
+                </mml:math>
+              </inlineequation></para></listitem>
 
               <listitem>
-                <para>???</para>
-              </listitem>
+                <para><inlineequation>
+                <mml:math display="block" 
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:apply>
+                    <mml:forall/>
+					<mml:bvar><mml:ci>j</mml:ci></mml:bvar>
+					<mml:apply><mml:implies/>
+					<mml:apply><mml:and/>
+					
+					<mml:apply><mml:in/>
+					<mml:ci>j</mml:ci>
+                    <mml:set>
+                      <mml:cn>1</mml:cn>
+
+                      <mml:ci>...</mml:ci>
+
+                      <mml:ci>n</mml:ci>
+                    </mml:set>
+					</mml:apply>
+					
+					<mml:apply><mml:neq/>
+                    <mml:ci>j</mml:ci>
+					<mml:ci>i</mml:ci>
+					</mml:apply>
+                  </mml:apply>
+					<mml:apply><mml:eq/>
+                    <mml:ci><mml:msub>
+                         <mml:mi>s</mml:mi>
+                         <mml:mi>j</mml:mi>
+                    </mml:msub>
+					</mml:ci>
+
+                    <mml:false/>
+				  </mml:apply>
+				  </mml:apply>
+				  </mml:apply>
+                </mml:math>
+              </inlineequation></para></listitem>
+			  
             </orderedlist>
+            
           </listitem>
         </itemizedlist>
       </section>
@@ -6741,25 +7178,128 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
           </listitem>
 
           <listitem>
-            <para>Let ??? be the conditions of all the XorVariations that are
+            <para>Let <inlineequation>
+                <mml:math display="inline"
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>1</mml:mn>
+                    </mml:msub>
+
+                    <mml:mo>,</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>,</mml:mo>
+
+                    <mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>n</mml:mn>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:math>
+              </inlineequation> be the conditions of all the XorVariations that are
             contained in a given <phrase>XorStructuralVariationPoint</phrase>.
             Then the following conditions must hold</para>
 
             <orderedlist>
-              <listitem>
-                <para>???</para>
-              </listitem>
+              <listitem><para><inlineequation>
+                <mml:math display="block" 
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:apply>
+                    <mml:exists/>
+					<mml:bvar><mml:ci>i</mml:ci></mml:bvar>
+					<mml:apply><mml:and/>
+					
+					<mml:apply><mml:in/>
+					<mml:ci>i</mml:ci>
+                    <mml:set>
+                      <mml:cn>1</mml:cn>
+
+                      <mml:ci>...</mml:ci>
+
+                      <mml:ci>n</mml:ci>
+                    </mml:set>
+					</mml:apply>
+					
+					<mml:apply><mml:eq/>
+                    <mml:apply><mml:ci type="function">eval</mml:ci><mml:ci><mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>i</mml:mn>
+                    </mml:msub></mml:ci></mml:apply>
+					  <mml:true/>
+					</mml:apply>
+                  </mml:apply>
+				  </mml:apply>
+                </mml:math>
+              </inlineequation></para></listitem>
 
               <listitem>
-                <para>???</para>
-              </listitem>
+                <para><inlineequation>
+                <mml:math display="block" 
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                  <mml:apply>
+                    <mml:forall/>
+					<mml:bvar><mml:ci>j</mml:ci></mml:bvar>
+					<mml:apply><mml:implies/>
+					<mml:apply><mml:and/>
+					
+					<mml:apply><mml:in/>
+					<mml:ci>j</mml:ci>
+                    <mml:set>
+                      <mml:cn>1</mml:cn>
+
+                      <mml:ci>...</mml:ci>
+
+                      <mml:ci>n</mml:ci>
+                    </mml:set>
+					</mml:apply>
+					
+					<mml:apply><mml:neq/>
+                    <mml:ci>j</mml:ci>
+					<mml:ci>i</mml:ci>
+					</mml:apply>
+                  </mml:apply>
+					<mml:apply><mml:eq/>
+                    <mml:apply><mml:ci type="function">eval</mml:ci><mml:ci><mml:msub>
+                      <mml:mrow>
+                        <mml:mi>c</mml:mi>
+                      </mml:mrow>
+
+                      <mml:mn>j</mml:mn>
+                    </mml:msub></mml:ci></mml:apply>
+					  <mml:false/>
+				  </mml:apply>
+				  </mml:apply>
+				  </mml:apply>
+                </mml:math>
+              </inlineequation></para>
+			  </listitem>
             </orderedlist>
           </listitem>
 
           <listitem>
-            <para>If a XorVariation has an attribute condition ??? and an
-            attribute selected ??? (inherited from Variation), then the
-            following condition shall hold:</para>
+            <para>If a XorVariation has an attribute condition <emphasis>c</emphasis> and an
+            attribute selected <emphasis>s</emphasis> (inherited from Variation), then the
+            following condition shall hold:
+			<inlineequation>
+                <mml:math display="block" 
+                          xmlns:mml="http://www.w3.org/1998/Math/MathML">
+			<mml:apply><mml:eq/>
+                    <mml:apply><mml:ci type="function">eval</mml:ci>
+                        <mml:ci>c</mml:ci>
+					</mml:apply>
+						<mml:true/>
+					</mml:apply>
+				</mml:math>
+			</inlineequation>
+			</para>
           </listitem>
         </itemizedlist>
       </section>
@@ -6770,7 +7310,7 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
         <para>Each XorStructuralVariationPoint contains one or more
         XorVariations. When a XorStructuralVariationPoint gets bound, the
         attribute condition of each XorVariation is evaluated. For only one
-        XorVariation the condition shall evaluate to???. For all other
+        XorVariation the condition shall evaluate to <emphasis>true</emphasis>. For all other
         XorVariations, the artifact elements that are referenced by its
         attribute correspondingVariableArtifactElement (see section <xref
         linkend="_Toc367432891"/>) get deleted or set to inactive.</para>
