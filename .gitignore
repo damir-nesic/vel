@@ -2,3 +2,5 @@
 *.html
 results
 output.txt
+db
+utilities
